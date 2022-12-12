@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--绑定对应Dao/Mapper接口-->
+<mapper namespace="org.data.meta.hive.model.mapper.MysqlEntityDao">
+    <insert  id="insertMysqlEntity"  parameterType="org.data.meta.hive.model.datahub.MysqlEntity">
+        insert into lineage_info (entity_urn,aspect_name,msg_info,created_date,created_time,createdby) value
+            (#{entityUrn},#{aspectName},#{msgInfo},#{createdDate},#{createdTime},#{createdBy})
+    </insert >
+
+
+</mapper>
+
+
+
